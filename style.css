@@ -37,11 +37,18 @@ img {
   margin: 0 auto;
   padding: 0 30px;
 }
-img {
+
+.content {
+  display: grid;
+  padding: 60px 0 100px;
+  row-gap: 80px;
+}
+
+/* img {
   max-width: 100%;
   height: auto;
   vertical-align: bottom;
-}
+} */
 /* -----------------
 見出し
 ----------------- */
@@ -254,7 +261,7 @@ img {
 .srevice-list__title {
   font-size: 18px;
   font-weight: bold;
-  text-align: 15px;
+  text-align: center;
 }
 
 .service-list__text {
@@ -518,6 +525,10 @@ media Rueries 767
 
   .btn-menu__line::after {
     top: 8px;
+  }
+
+  .btn-menu.active .btn-menu__line {
+    background-color: transparent;
   }
 
   .btn-menu.active .btn-menu__line::before,
